@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/cardview_compat_inset_shadow"
+    android:paddingLeft="@dimen/cardview_compat_inset_shadow"
+    android:paddingRight="@dimen/cardview_compat_inset_shadow"
+    android:paddingTop="@dimen/cardview_compat_inset_shadow"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView_enter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:text="@string/Enter" />
+
+    <EditText
+        android:id="@+id/editText_enter_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_enter_name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:inputType="text"
+        android:textSize="17sp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView_enter_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText_enter_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:text="@string/Email" />
+
+    <EditText
+        android:id="@+id/editText_enter_username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_enter_username"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:inputType="text"
+        android:textSize="17sp"
+        android:ems="10" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView_enter_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_enter_username"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Student ID"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editText_enter_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_enter_password"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:inputType="textPassword"
+        android:textSize="17sp"
+        android:ems="10" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView_enter_rpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_enter_password"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/Phone"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editText_enter_rpassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_enter_rpassword"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:inputType="textPassword"
+        android:textSize="17sp"
+        android:ems="10" >
+    </EditText>
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_enter_rpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/Submit" />
+
+</RelativeLayout>
